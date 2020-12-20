@@ -12,10 +12,10 @@ def makeHack(letter):
 
 	letter = letter.upper()
 
-		if letter in lettersOrig :
-			hackText += lettersRepl[lettersOrig.index(letter)]
-		else :
-			hackText += letter
+	if letter in lettersOrig :
+		hackText += lettersRepl[lettersOrig.index(letter)]
+	else :
+		hackText += letter
 
 if len(sys.argv) < 2 :
 	print("please provide text-file as argument")
